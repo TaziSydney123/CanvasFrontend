@@ -1,5 +1,5 @@
-import { IonContent, IonFooter, IonHeader, IonIcon, IonLabel, IonPage, IonTabBar, IonTabButton, IonText, IonToolbar } from '@ionic/react';
-import { personCircleOutline, gridOutline } from "ionicons/icons";
+import { IonFooter, IonIcon, IonLabel, IonPage, IonTabBar, IonTabButton } from '@ionic/react';
+import { personOutline, gridOutline } from "ionicons/icons";
 import { useState } from 'react';
 import Contacts from '../components/homeViews/Contacts';
 import Canvases from '../components/homeViews/Canvases';
@@ -26,7 +26,7 @@ export default function Home() {
       {getPageContent()}
       <IonFooter>
         <IonTabBar>
-          {createTabButton(Tab.CONTACTS, personCircleOutline, setSelectedTab, selectedTab)}
+          {createTabButton(Tab.CONTACTS, personOutline, setSelectedTab, selectedTab)}
           {createTabButton(Tab.CANVASES, gridOutline, setSelectedTab, selectedTab)}
         </IonTabBar>
       </IonFooter>

@@ -38,7 +38,7 @@ function createTabButton(tab: Tab, icon: string, setSelectedTab: (tab: Tab) => v
   return (
     <IonTabButton tab={tab} selected={selectedTab === tab} onClick={() => setSelectedTab(tab)}>
       <IonIcon icon={icon} />
-      <IonLabel>{tab}</IonLabel>
+      <IonLabel style={{fontSize: 16}}>{tab}</IonLabel>
     </IonTabButton>
   );
 }

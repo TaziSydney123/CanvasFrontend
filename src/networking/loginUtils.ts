@@ -1,3 +1,5 @@
+import { apiPostRequest } from "./apiRequestUtils";
+
 export enum LoginType {
     GOOGLE = "GOOGLE",
     FACEBOOK = "FACEBOOK",
@@ -6,5 +8,5 @@ export enum LoginType {
 }
 
 export function login(loginType: LoginType, authToken: string) {
-    console.error("login function not yet implemented");
+    apiPostRequest("login", {authToken});
 }

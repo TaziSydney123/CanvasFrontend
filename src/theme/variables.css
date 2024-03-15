@@ -240,3 +240,12 @@ html {
   https://ionicframework.com/docs/layout/dynamic-font-scaling */
   --ion-dynamic-font: var(--ion-default-dynamic-font);
 }
+
+.canvas-pixel {
+  background-color: #fff;
+  border: solid 1px #fff;
+  color: #000;
+  aspect-ratio: 1/1;
+  width: 30px;
+  text-align: center;
+}
